@@ -1,4 +1,4 @@
-fern
+Fern
 ====
 
 Key-value store project!
@@ -14,12 +14,15 @@ Key-value store project!
 :License: MIT
 
 
-Settings
---------
-
-Moved to settings_.
-
+To get started
+--------------
+* You need to set environment variables related to DATABASES,etc using $export or create a .env file in fern/config to set needed environment variables and you can find a list of the needed env variables here:
 .. _settings: http://cookiecutter-django.readthedocs.io/en/latest/settings.html
+
+* In order to force using a .env file use the following form in any django related command for example to runserver:
+    $ DJANGO_READ_DOT_ENV_FILE=TRUE [./manage.py runserver] --settings=config.settings.test
+.. _settings: http://cookiecutter-django.readthedocs.io/en/latest/settings.html
+
 
 Basic Commands
 --------------
@@ -68,6 +71,9 @@ Moved to `Live reloading and SASS compilation`_.
 .. _`Live reloading and SASS compilation`: http://cookiecutter-django.readthedocs.io/en/latest/live-reloading-and-sass-compilation.html
 
 
+
+Other settings related to Celery, Docker, Deployment, etc
+--------
 
 Celery
 ^^^^^^
